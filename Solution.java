@@ -1,39 +1,35 @@
 /* 
-Создать класс Circle
+Собираем прямоугольник
 */
 
-public class Circle {
+public class Rectangle {
     //напишите тут ваш код
-    int centerX;
-    int centerY;
-    int radius;
+    int top;
+    int left;
     int width;
-    int color;
+    int height;
     
-    public void initialize (int centerX, int centerY, int radius){
-    this.centerX = centerX ;
-    this.centerY = centerY;
-    this.radius = radius;
-    
-    }
-    
-    public void initialize (int centerX, int centerY, int radius, int width){
-    this.centerX = centerX ;
-    this.centerY = centerY;
-    this.radius = radius;
+    public void initialize (int top, int left, int width, int height){
+    this.top = top;
+    this.left = left;
     this.width = width;
-    
+    this.height = height;
     }
     
-    public void initialize (int centerX, int centerY, int radius, int width, int color){
-    this.centerX = centerX ;
-    this.centerY = centerY;
-    this.radius = radius;
-    this.width = width;
-    this.color = color;
-    
+    public void initialize (int top, int left, int height){
+    this.top = top;
+    this.left = left;
+    this.height = height;
     }
     
+     public void initialize (int top, int left){
+    this.top = top;
+    this.left = left;
+    }
+    
+    public void initialize (int top){
+    this.top = top;
+    }
 
     public static void main(String[] args) {
 
